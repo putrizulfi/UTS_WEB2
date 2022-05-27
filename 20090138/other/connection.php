@@ -1,13 +1,14 @@
 <?php
 
-$hostDB = '127.0.0.1';
-$portDB = '5432';
-$nameDB = 'uts';
-$userDB = 'postgres';
-$pwDB = '12345';
+$host = 'ec2-34-231-177-125.compute-1.amazonaws.com';
+$port = '5432';
+$user = 'shcelwopgbqvzm'; 
+$password = 'a057ab28fbda56efb83c23e75ed7de6f75d825e03edad047a61bbb7b2274d725';
+$db   = 'da603ep3gnn6sf';
 
-$connection = pg_connect("host=$hostDB port=$portDB dbname=$nameDB user=$userDB password=$pwDB");
+$connection = pg_connect("host=$host port =$port dbname=$db user=$user password=$password");
 session_start();
+
 if($connection){
     
 }else{
